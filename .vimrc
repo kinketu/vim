@@ -180,7 +180,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 "------------------------------------------------------------
 
 " clipboard setting
-set clipboard=unnamed, autoselect
+set clipboard=unnamed
 
 set nocompatible
 filetype off

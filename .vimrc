@@ -179,6 +179,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 
+
 " clipboard setting
 set clipboard=unnamed
 set clipboard=autoselect
@@ -194,6 +195,7 @@ endif
 " ここにインストールしたいプラグインのリストを書く
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'fuenor/im_control.vim'
 :
 
 filetype plugin on
@@ -260,3 +262,11 @@ endfunction
 function! MyMode()
   return winwidth('.') > 60 ? lightline#mode() : ''
 endfunction
+
+" 「日本語入力固定モード」切替キー
+inoremap <silent> <C-j> <C-r>=IMState('FixMode')<CR>
+" PythonによるIBus制御指定
+let IM_CtrlIBusPython = 1
+
+" <ESC>押下後のIM切替開始までの反応が遅い場合はttimeoutlenを短く設定してみてください。
+set timeout timeoutlen=3000 ttimeoutlen=100

@@ -201,6 +201,8 @@ NeoBundle 'fuenor/im_control.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'scrooloose/syntastic'
 :
 
 filetype plugin on

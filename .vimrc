@@ -199,6 +199,8 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'fuenor/im_control.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 :
 
 filetype plugin on

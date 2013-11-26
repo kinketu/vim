@@ -26,6 +26,8 @@ filetype indent plugin on
 " 色づけをオン
 syntax on
 
+" スワップファイルを作らない
+set noswapfile
 
 "------------------------------------------------------------
 " Must have options {{{1

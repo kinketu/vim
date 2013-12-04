@@ -203,10 +203,17 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'basyura/twibill.vim'
+NeoBundle 'basyura/TweetVim'
 :
 
 filetype plugin on
 filetype indent on
+
+" TweetVim settings
+let g:tweetvim_display_icon = 1
+let g:tweetvim_tweet_per_page = 60
 
 " vim-indent-guides settings
 " vim立ち上げたときに、自動的にvim-indent-guidesをオンにする
@@ -224,7 +231,7 @@ let g:indent_guides_color_change_percent = 30
 " ガイドの幅
 let g:indent_guides_guide_size = 1
 
-" lightline.vim settings
+" lightline.vim settings start
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'mode_map': { 'c': 'NORMAL' },
@@ -285,6 +292,8 @@ endfunction
 function! MyMode()
   return winwidth('.') > 60 ? lightline#mode() : ''
 endfunction
+" lightline.vim settings end
+
 
 " 「日本語入力固定モード」切替キー
 inoremap <silent> <C-j> <C-r>=IMState('FixMode')<CR>

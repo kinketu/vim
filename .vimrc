@@ -183,8 +183,9 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 
 " clipboard setting
-set clipboard=unnamed
-set clipboard=autoselect
+" set clipboard+=unnamed
+" set clipboard+=autoselect
+set clipboard=unnamedplus
 
 set nocompatible
 filetype on 

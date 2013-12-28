@@ -207,6 +207,8 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'basyura/twibill.vim'
 NeoBundle 'basyura/TweetVim'
+NeoBundle 'kevinw/pyflakes-vim'
+NeoBundle 'davidhalter/jedi-vim'
 :
 
 filetype plugin on
